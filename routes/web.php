@@ -16,10 +16,13 @@ use App\Http\Controllers\PersonalController;
 |
 */
 
-Route::get('/', function () {
-    return view('principal');
-});
+// Route::get('/', function () {
+//     return view('principal');
+// });
 
+Route::get('/', function () {
+    return view('login');
+});
 /*Route::group(['prefix'=>'cargos'],function(){
     Route::get('/', 'CargosController@index')->name('cargos.index');
     Route::get('/create', 'CargosController@create')->name('cargos.create');
